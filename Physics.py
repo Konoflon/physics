@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-angle = float(input("Угол (град): "))
-mu = float(input("Коэфф трения: "))
+angle = float(input("Угол (градусы): "))
+mu = float(input("Коэффициент трения: "))
 g = 9.81
 a = g * (np.sin(np.radians(angle)) - mu * np.cos(np.radians(angle)))
 if a < 0: a = 0
